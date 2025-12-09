@@ -25,6 +25,11 @@ class Redgit < Formula
     sha256 "8dbca0739d487e5bd35ab3ca4b36e11c4078f3a234bfce294b0a0291363404de"
   end
 
+  resource "typing_extensions" do
+    url "https://files.pythonhosted.org/packages/source/t/typing_extensions/typing_extensions-4.12.2.tar.gz"
+    sha256 "1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"
+  end
+
   # Rich and its dependencies
   resource "rich" do
     url "https://files.pythonhosted.org/packages/source/r/rich/rich-13.9.4.tar.gz"
