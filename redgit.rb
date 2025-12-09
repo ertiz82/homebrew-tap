@@ -11,12 +11,12 @@ class Redgit < Formula
 
   resource "typer" do
     url "https://files.pythonhosted.org/packages/source/t/typer/typer-0.12.5.tar.gz"
-    sha256 "f592f089bedcc8ec1b974f13ccf5182f5bdcc87eaa63bf79e6a5614d810d42be"
+    sha256 "f592f089bedcc8ec1b974125d64851029c3b1af145f04aca64d69410f0c9b722"
   end
 
   resource "rich" do
     url "https://files.pythonhosted.org/packages/source/r/rich/rich-13.9.4.tar.gz"
-    sha256 "439594978a49a09530cff7ebc4b5c7103ef57c74a48def5b4cec9c6d0e3c6e3a"
+    sha256 "439594978a49a09530cff7ebc4b5c7103ef57baf48d5ea3184f21d9a2befa098"
   end
 
   resource "PyYAML" do
