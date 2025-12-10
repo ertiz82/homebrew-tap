@@ -3,8 +3,8 @@ class Redgit < Formula
 
   desc "AI-powered Git workflow assistant with task management integration"
   homepage "https://github.com/ertiz82/redgit"
-  url "https://files.pythonhosted.org/packages/source/r/redgit/redgit-1.0.0.tar.gz"
-  sha256 "1beef6f39bedabbe0c4004db3f3e7d19758893063e8c231d1a346a2a6d8aa900"
+  url "https://files.pythonhosted.org/packages/source/r/redgit/redgit-1.0.2.tar.gz"
+  sha256 "2aab8fa72a33e2038aad17f2d22bd3b2d7901dca50e442e791e4b37f2b872842"
   license "MIT"
 
   depends_on "python@3.11"
