@@ -22,17 +22,17 @@ brew install ertiz82/tap/redgit
 
 ```bash
 # Verify installation
-rg --version
+rgt --version
 
 # Initialize in your project
 cd your-project
-rg init
+rgt init
 
 # Analyze and commit changes
-rg propose
+rgt propose
 
 # Push and complete issues
-rg push
+rgt push
 ```
 
 ## Updating

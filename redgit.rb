@@ -3,15 +3,11 @@ class Redgit < Formula
 
   desc "AI-powered Git workflow assistant with task management integration"
   homepage "https://github.com/ertiz82/redgit"
-  url "https://files.pythonhosted.org/packages/source/r/redgit/redgit-1.4.1.tar.gz"
-  sha256 "72a483f7f5cd330ec89e7ca95ea89b5b36e964cec6fe6dab5e86b94ac323ed21"
+  url "https://files.pythonhosted.org/packages/source/r/redgit/redgit-1.5.0.tar.gz"
+  sha256 "27579785f6f460d85dfe70881928b63169759182082f909e204599fb2b14799c"
   license "MIT"
 
   depends_on "python@3.11"
-
-  # Note: Both redgit and ripgrep use 'rg' command
-  # If you have ripgrep installed, you may need to use 'redgit' instead of 'rg'
-  # or add an alias in your shell config
 
   # Typer and its dependencies
   resource "typer" do
@@ -109,20 +105,10 @@ class Redgit < Formula
 
   def caveats
     <<~EOS
-      redgit is installed with two commands: `redgit` and `rg`
+      redgit is installed with two commands: `redgit` and `rgt`
 
-      ⚠️  If you have ripgrep installed, both tools use the `rg` command.
-      To ensure redgit's `rg` takes priority, add this to your shell config:
-
-      For bash (~/.bashrc or ~/.bash_profile):
-        alias rg='#{opt_bin}/rg'
-
-      For zsh (~/.zshrc):
-        alias rg='#{opt_bin}/rg'
-
-      Or use the full command: `redgit` instead of `rg`
-
-      To access ripgrep when needed, use: $(brew --prefix ripgrep)/bin/rg
+      Note: as of v1.5.0 the short command was renamed from `rg` to `rgt`
+      to avoid conflicting with ripgrep.
     EOS
   end
 
